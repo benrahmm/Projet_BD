@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<fx:root fx:id="buyerOffer" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" type="Pane" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <Label layoutX="15.0" layoutY="15.0" text="Baie-électronique" textFill="#178bd4">
+            <font>
+                <Font name="Arial Bold Italic" size="24.0" />
+            </font>
+        </Label>
+        <Label layoutX="15.0" layoutY="135.0" text="Prix proposé :" textFill="#101010">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Label>
+        <Spinner fx:id="proposedPrice" editable="true" layoutX="15.0" layoutY="155.0" />
+        <Label layoutX="15.0" layoutY="195.0" text="Quantité souhaitée :" textFill="#101010">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Label>
+        <Spinner fx:id="quantity" editable="true" layoutX="15.0" layoutY="215.0" />
+        <Button layoutX="15.0" layoutY="300.0" mnemonicParsing="false" onAction="#offerPush" text="Soummettre l'offre" textFill="#101010">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Button>
+        <Button layoutX="15.0" layoutY="340.0" mnemonicParsing="false" onAction="#quitOfferPage" prefHeight="30.0" prefWidth="146.0" text="Annuler l'offre" textFill="#101010">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Button>
+      <Label fx:id="bestPrice" alignment="TOP_LEFT" layoutX="284.0" layoutY="159.0" prefHeight="18.0" prefWidth="228.0" text="Meilleur offre: x euros (prix unitaire)" />
+    </children>
+</fx:root>

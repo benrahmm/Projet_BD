@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Font?>
+<fx:root type="Pane" fx:id="acceptOffer" prefHeight="200.0" prefWidth="200.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+    <children>
+        <Label layoutX="15.0" layoutY="15.0" text="Baie-électronique" textFill="#178bd4">
+            <font>
+                <Font name="Arial Bold Italic" size="24.0" />
+            </font>
+        </Label>
+        <Label layoutX="70.0" layoutY="150.0" text="Félicitations! Votre vente a été validée avec succès :)">
+            <font>
+                <Font name="System Bold Italic" size="18.0" />
+            </font>
+        </Label>
+    </children>
+</fx:root>

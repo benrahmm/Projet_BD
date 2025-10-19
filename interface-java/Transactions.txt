@@ -1,0 +1,39 @@
+//Accepter une offre
+SELECT * FROM Offre WHERE ID_offre = ?;
+IF len(result) == 0 :
+  ROLLBACK;
+  FIN;
+END IF
+UPDATE Vente SET Stock_lot = Stock_lot - ? WHERE ID_Vente = ?;
+IF updatedRows == 0 :
+  ROLLBACK;
+  FIN;
+END IF;
+DELETE FROM Offre WHERE ID_offre = ?;
+DELETE FROM Offre WHERE ID_Vente = ? AND quantite > (SELECT Stock_lot FROM Vente WHERE ID_Vente = ?);
+DELETE FROM Vente WHERE ID_Vente = ? AND Stock_lot = 0;
+COMMIT;
+FIN;
+//Ajouter une offre
+SELECT * FROM Vente WHERE ID_Vente = ?;
+IF len(result) == 0:
+  ROLLBACK;
+  FIN;
+END IF
+IF limiteOffre:
+  IF NOW() >= Date_fin:
+    ROLLBACK;
+    FIN;
+  END IF
+  IF venteActuelle est limité:
+    SELECT * FROM Offre WHERE ID_Vente = ? AND mail = ?;
+    IF len(result) > 0:
+      ROLLBACK;
+      FIN;
+    END IF
+  END IF
+  INSERT INTO Offre (mail, ID_Vente, date_offre, prix_achat, quantite) VALUES (?, ?, ?, ?, ?);
+  COMMIT;
+  FIN;
+END IF
+

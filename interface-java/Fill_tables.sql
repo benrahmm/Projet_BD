@@ -1,0 +1,10 @@
+INSERT INTO Categorie VALUES ('Hightech', 'PC');
+INSERT INTO Categorie VALUES ('Immobilier', 'Maisons');
+INSERT INTO Categorie VALUES ('Pommes', 'Pommes');
+INSERT INTO Salle_de_vente(Nom_categorie) VALUES ('Hightech');
+INSERT INTO Salle_de_vente(Nom_categorie) VALUES ('Hightech');
+INSERT INTO Produit(nom, prix_revient, Nom_categorie) VALUES ('PC DELL', 800, 'Hightech');
+INSERT INTO Produit(nom, prix_revient, Nom_categorie) VALUES ('PC HP', 750, 'Hightech');
+INSERT INTO Caracteristique(ID_produit, Nom_Caracteristique, valeur) VALUES (1, 'poids', '12');
+INSERT INTO Caracteristique(ID_produit, Nom_Caracteristique, valeur) VALUES (2, 'poids', '15');
+INSERT INTO Caracteristique(ID_produit, Nom_Caracteristique, valeur) VALUES (1, 'test', 'Valeur de test');

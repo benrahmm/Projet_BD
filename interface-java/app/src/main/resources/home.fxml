@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Font?>
+<?import javafx.geometry.Insets?>
+<fx:root type="javafx.scene.layout.Pane" fx:id="home" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <Label layoutX="15.0" layoutY="15.0" text="Baie-électronique " textFill="#178bd4">
+            <font>
+                <Font name="Arial Bold Italic" size="24.0" />
+            </font>
+        </Label>
+        <Label layoutX="4.0" layoutY="150.0" text="Bienvenue sur Baie-Électronique, la meilleure plateforme de ventes aux enchères en ligne!">
+            <font>
+                <Font name="Arial Black" size="12.0" />
+            </font>
+        </Label>
+        <Button layoutX="235.0" layoutY="230.0" mnemonicParsing="false" onAction="#connection" prefHeight="30.0" prefWidth="130.0" text=" Se connecter " textFill="#101010">
+            <font>
+                <Font name="System Bold Italic" size="14.0" />
+            </font>
+        </Button>
+        <Button layoutX="235.0" layoutY="265.0" mnemonicParsing="false" onAction="#accountCreation" prefHeight="30.0" prefWidth="130.0" text="Créer un compte" textFill="#101010">
+            <font>
+                <Font name="System Bold Italic" size="14.0" />
+            </font>
+        </Button>
+    </children>
+    <opaqueInsets>
+        <Insets />
+    </opaqueInsets>
+</fx:root>
